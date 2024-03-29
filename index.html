@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> I - Primeiros passos com HTML</title>
+    
+    <style> h2, small {
+        display: inline
+    };
+    </style>
+
+</head>
+<body>
+    <h1> I - Primeiros passos com HTML</h1>
+    <hr id="inicio">
+
+    <h2>Índice</h2>
+    
+    <ol>
+        <li><a href="#parte1">História dos computadores</a></li>
+        <li><a href="#parte2">O que são <i>Clients</i>?</a></li>
+        <li><a href="#parte3">O que são <i>Servers</i>?</a></li>
+        <li><a href="#parte4">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#parte5">Tags</a></li>
+        <li><a href="#parte6">Atributos das Tags</a></li>
+        <li><a href="#parte7">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#parte8">HTML não é uma linguagem de programação.</a></li>
+        <li><a href="#parte9">Links</a></li>
+        <li><a href="#parte10">Links de referências</a></li>
+    </ol>
+
+    <h2 id="parte1">1. História dos computadores </h2> <small><a href="#inicio">Voltar ao topo</a></small>
+    
+    
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Os primeiros computadores foram desenvolvidos no final do século <abbr title="19">XIX</abbr> e início do século <abbr title="20">XX</abbr>, com marcos como a máquina analítica concebida por <i>Charles Babbage</i> em 1837.</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp No entanto, os primeiros computadores eletrônicos programáveis surgiram durante a Segunda Guerra Mundial, com o <u>Colossus</u> na Grã-Bretanha e o <u>ENIAC</u> nos Estados Unidos. Após a guerra, houve avanços significativos, como o <u>UNIVAC I</u>, o primeiro computador comercialmente disponível, lançado em 1951.</p> 
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Desde então, houve uma rápida evolução, incluindo o desenvolvimento dos computadores pessoais nas décadas de 1970 e 1980.</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Você pode conhecer toda a história dos computadores no blog <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/">Toda Matéria.</a></p>
+    
+       
+    <h2 id="parte2">2. O que são <i>Clients</i>? </h2> <small><a href="#inicio">Voltar ao topo</a></small>
+
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Em tecnologia da informação, <i>clients</i> (clientes) se refere a dispositivos de computação ou softwares que acessam e utilizam os serviços, recursos ou dados fornecidos por um servidor. Esses clientes podem ser computadores pessoais, laptops, smartphones, tablets ou qualquer outro dispositivo capaz de se conectar a uma rede, como a internet, e interagir com servidores para acessar informações, enviar solicitações ou executar tarefas específicas. </P>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Os clientes podem se comunicar com os servidores por meio de diferentes protocolos de comunicação, como HTTP, FTP, SSH, entre outros. Em resumo, os clientes são os usuários ou sistemas que consomem os serviços disponibilizados por servidores em uma rede.</p>
+
+    <h2 id="parte3">3. O que são <i>Servers</i>? </h2> <small><a href="#inicio">Voltar ao topo</a></small>
+
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>Servers</i> são computadores ou sistemas de computação que fornecem serviços, recursos ou dados para outros dispositivos, chamados <i>clients</i>, em uma rede. Eles atuam respondendo a solicitações dos clientes, processando dados e fornecendo acesso a recursos compartilhados, como páginas da web, arquivos, e-mails, entre outros.</P> 
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Os servidores podem assumir diferentes funções, como servidores web, servidores de e-mail, servidores de banco de dados, entre outros, dependendo das necessidades e serviços oferecidos em uma rede. Em resumo, os servidores são responsáveis por fornecer e gerenciar informações e serviços para os clientes.</p>
+
+    <h2 id="parte4">4. Como é uma estrutura básica de um HTML? </h2> <small><a href="#inicio">Voltar ao topo</a></small>
+
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp A estrutura básica de um documento HTML consiste em elementos que definem a estrutura e o conteúdo da página da web. Aqui está uma estrutura HTML simples:</p>
+            
+            <img src="/Projeto 1/estrutura-html.png"> 
+            <p><small>Estrutura básica de um html</small></p>
+            
+            <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Explicação dos elementos:</p>
+                <ul>
+                    <li><strong>&lt!DOCTYPE html&gt:</strong> Define o tipo de documento HTML.</li>
+                    <li><strong>&lthtml&gt</strong>  Define o elemento raiz do documento HTML.</li>
+                    <li><strong>&ltlang="pt-br"&gt:</strong> Atributo que define o idioma do documento.</li>
+                    <li><strong>&lthead&gt:</strong> Contém informações sobre o documento, como metadados, links para estilos e scripts.</li>
+                    <li><strong>&ltmeta charset="UTF-8"&gt:</strong> Define a codificação de caracteres do documento como UTF-8.</li>
+                    <li><strong>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt:</strong>  Define a largura da viewport e a escala inicial para dispositivos móveis.</li>
+                    <li><strong>&lttitle&gt:</strong> Define o título da página exibido na barra de título do navegador.</li>
+                    <li><strong>&ltbody&gt:</strong>  Contém o conteúdo visível da página.</li>
+                    <li><strong>&lth1&gt:</strong> Define um cabeçalho de nível 1.</li>
+                    <li><strong>&ltp&gt:</strong> Define um parágrafo de texto.</li>
+                </ul>
+        
+    <h2 id="parte5">5. Tags</h2> <small><a href="#inicio">Voltar ao topo</a></small>
+    
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Em HTML, as tags são elementos usados para marcar partes específicas do conteúdo de uma página da web. Elas são cercadas por colchetes angulares &lt > e podem ter atributos que fornecem informações adicionais sobre como o elemento deve ser exibido ou comportar-se.</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp As tags podem ser usadas para diversos fins, como definir cabeçalhos, parágrafos, links, imagens, tabelas, formulários e muito mais. Elas são fundamentais para estruturar e formatar o conteúdo de uma página da web, permitindo que os navegadores entendam como exibir e interpretar o documento HTML.</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Abaixo algumas tags que são apresentadas na <mark>Formação HTML Web Developer</mark> da <a href="https://web.dio.me/track/formacao-html-web-developer" target="_blank"><abbr title="Digital Inovation">DIO.</abbr></a></p>
+        
+        <ul>
+            <li>Tag de &lth1&gt até &lth6&gt são utilizadas para indicar títulos ou subtítulos, os textos dentro destas tags são exibibos em uma fonte maior e em negrito.</li> 
+                <h1>Exemplo tag &lth1&gt </h1>
+                <h2>Exemplo tag &lth2&gt </h2>
+                <h3>Exemplo tag &lth3&gt </h3>
+                <h4>Exemplo tag &lth4&gt </h4>
+                <h5>Exemplo tag &lth5&gt </h5>
+                <h6>Exemplo tag &lth6&gt </h6>
+            
+            <li>Tag &ltsub&gt são utilizadas para criar um texto subscrito, ele é exibido ligeiramente abaixo da linha base normal do texto.</li>
+                <p>Olá<sub>exemplo</sub></p>
+
+            <li>Tag &ltsup&gt cria um texto sobrescrito, usada para representar expoentes ou número elevados, dando a impressão de que esta acima da linha base normal do texto.</li>
+                <p>4<sup>2</sup></p>
+            
+            <li>Tag &ltfont&gt usada para definir o tamanho, cor e estilo da fonte de um texto. Atualmente esta obsoleta, recomenda-se o uso do CSS.</li>
+                <p><font color="red" size="2px" face="times new roman">Este é um expemplo:</font></p>
+                <p>&ltfont color="red" size="2px" face="times new roman"&gt Este é um expemplo.&lt/font&gt
+            
+            <li>Tag &ltblockquote&gt destaca um bloco do texto, geralmente utilizada para citações de autor, identação à esquerda, para indicar visualmente que é uma citação.</li>
+                <blockquote>
+                    <p>"A imaginação é mais importante que o conhecimento. O conhecimento é limitado. A imaginação circunda o mundo." - Albert Einstein</p>
+                </blockquote>
+                
+        </ul>
+
+    <h2 id="parte6">6. Atributos das Tags</h2> <small><a href="#inicio">Voltar ao topo</a></small>
+
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Atributos das tags HTML são características adicionais que podem ser adicionadas a elementos HTML para fornecer informações extras ou para controlar o comportamento e a aparência desses elementos. Cada elemento HTML pode ter seus próprios atributos, e esses atributos são especificados dentro das tags de abertura dos elementos.</p>
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Por exemplo, na tag <strong>&ltimg&gt</strong>, o atributo <strong>src</strong> é usado para especificar o URL da imagem a ser exibida, enquanto o atributo <strong>alt</strong> é usado para fornecer um texto alternativo caso a imagem não possa ser exibida.</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Os atributos podem ser usados para diversas finalidades, como fornecer informações de formatação (como cores, tamanhos de fonte), definir comportamentos (como links para outras páginas, ações de formulário), fornecer metadados (como idioma do documento, codificação de caracteres), entre outros. Eles são uma parte fundamental na construção e na personalização de páginas da web.</p>
+        
+
+    <h2 id="parte7">7. Entendendo a diferença entre listas ordenadas e não ordenadas</h2> <small><a href="#inicio">Voltar ao topo</a></small>
+
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Listas ordenadas são usadas quando a ordem dos itens é relevante e precisam ser numeradas ou ordenadas, enquanto listas não ordenadas são utilizadas quando a ordem dos itens não é importante e apenas a apresentação de uma lista de itens é necessária.</p>
+
+    <h2 id="parte8">8. HTML não é uma linguagem de programação.</h2> <small><a href="#inicio">Voltar ao topo</a></small>
+
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp O HTML é uma linguagem de <strong>marcação</strong> que define a estrutura e o conteúdo de uma página da web, enquanto linguagens de programação como <del>Python</del> JavaScript são usadas para adicionar interatividade e funcionalidade às páginas.</p>
+
+    <h2 id="parte9">9. Links</h2> <small><a href="#inicio">Voltar ao topo</a></small>
+
+        <P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp A tag <strong>&ltlink&gt </strong> em HTML é usada para conectar um documento HTML a recursos externos, como folhas de estilo CSS, ícones de favoritos e fontes. Ela não possui uma tag de fechamento. </p>
+
+    <h2 id="parte10">10. Links de referências</h2> <small> <a href="#inicio">Voltar ao topo</a></small>
+    
+    <ul>
+        
+        <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank"><abbr title="Tags HTML em ordem alfabética">W3 Schools</abbr></a></li>
+        <li><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank"><abbr title="História do Computador">Toda Matéria</abbr></a></li>
+        
+    </ul>
+
+    
+
+
+
+</body>
+</html>
